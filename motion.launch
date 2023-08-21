@@ -1,0 +1,12 @@
+<launch>
+    <arg name="how_long"/>
+    <arg name="theta1"/>
+    <arg name="theta2"/>
+    <param name="how_long" value="$(arg how_long)"/>
+    <param name="theta1" value="$(arg theta1)"/>
+    <param name="theta2" value="$(arg theta2)"/>
+    <node name="relative_motion" pkg="relative_motion" type="relative_motion" output="screen">
+    </node>
+
+    
+</launch>
